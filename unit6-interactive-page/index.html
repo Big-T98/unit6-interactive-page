@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Profile Card</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="container dark">
+    <h1>🎨 Live Profile Card Builder</h1>
+    <p class="subtitle">Type below and watch your card update in real time!</p>
+
+    <div class="form-section">
+      <label for="nameInput">Name:</label>
+      <input type="text" id="nameInput" placeholder="Enter your name" />
+
+      <label for="hobbyInput">Favorite hobby:</label>
+      <input type="text" id="hobbyInput" placeholder="e.g., gaming, reading" />
+
+      <label for="moodSelect">Mood:</label>
+      <select id="moodSelect">
+        <option value="default">🎭 Choose Your Mood:</option>
+        <option value="happy">😊 Happy</option>
+        <option value="chill">😎 Chill</option>
+        <option value="excited">🤩 Excited</option>
+        <option value="sleepy">😴 Sleepy</option>
+      </select>
+
+      <label for="colorSelect">Background Color:</label>
+      <select id="colorSelect">
+        <option value="">🌈 Pick a background color:</option>
+        <option value="lightblue">🩵 Light Blue</option>
+        <option value="lightgreen">💚 Light Green</option>
+        <option value="orange">🧡 Orange</option>
+        <option value="yellow">💛 Yellow</option>
+        <option value="red">❤️ Red</option>
+        <option value="pink">🩷 Pink</option>
+        <option value="white">🤍 White</option>
+        <option value="tan">🤎 Tan</option>
+        <option value="black">🖤 Black</option>
+      </select>
+
+        <button id="themeBtn">🌙 Toggle Dark Mode</button>
+
+        <button id="reset">🗑️ Clear Text Fields</button>
+    </div>
+    
+
+    <div class="card" id="profileCard">
+      <h2 id="cardName">Your Name</h2>
+      <p id="cardHobby">Your hobby will appear here</p>
+      <p id="cardMood">🎭 Choose Your Mood</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
